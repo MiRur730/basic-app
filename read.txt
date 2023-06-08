@@ -1,0 +1,4 @@
+//cd basic-app 
+//npm start
+//ctrl +F to replace any text with new text
+//rcfe shortcut to form function in any.js
