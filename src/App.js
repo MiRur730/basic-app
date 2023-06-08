@@ -5,12 +5,12 @@ import TextForm from './components/TextForm';
 import React from 'react';
 import {useState} from 'react';
 import Alert from './components/Alert';
-import About from './components/About';
-import{
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from "react-router-dom";
+// import About from './components/About';
+// import{
+//   BrowserRouter as Router,
+//   Routes,
+//   Route
+// } from "react-router-dom";
 
 function App() {
 
@@ -49,27 +49,27 @@ function App() {
 
   
   return (
-    <Router>
+    // <Router>
     <div className="App">
    <Navbar title="Text-Converter" mode={mode} modeText={modeText}   modechanger={modechanger} modT={modT}  ></Navbar>
    <Alert alert={alert} ></Alert>
    <div className="container">
-   {/* <Switch> */}
-   <Routes>
+ 
+   {/* <Routes> */}
    
-    <Route exact path='/about'> element={<About />} </Route>
+    {/* <Route exact path='/about'> element={<About />} </Route> */}
     
-    <Route exact path='/'>
-    element={< TextForm showAlert={showAlert} />}
-    
-    </Route>
-    </Routes>
-   {/* </Switch> */}
+    {/* <Route exact path='/'>
+    element={< TextForm showAlert={showAlert} />} */}
+    < TextForm showAlert={showAlert} />
+    {/* </Route>
+    </Routes> */}
+   
    
    </div>
    
     </div>
-    </Router>
+    // </Router>
   );
 }
 
